@@ -1,6 +1,5 @@
 import "./App.css";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-import AdminDashboard from "./pages/AdminDashboard";
+import { HashRouter, Routes, Route, Link } from "react-router-dom";import AdminDashboard from "./pages/AdminDashboard";
 import CommunityPage from "./pages/CommunityPage";
 
 function HomePage() {
@@ -40,16 +39,17 @@ function HomePage() {
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="s/report" element={<CommunityPage />} />
+        <Route path="/report" element={<CommunityPage />} />
         <Route path="/admin" element={<AdminDashboard />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
-<Route path="/report" element={<CommunityPage />} />
-
 export default App;
+
+
+
