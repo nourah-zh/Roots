@@ -50,4 +50,6 @@ function App() {
   );
 }
 
+<Route path="/report" element={<CommunityPage />} />
+
 export default App;
